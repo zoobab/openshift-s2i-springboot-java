@@ -28,8 +28,8 @@ RUN yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
     mkdir -p /opt/openshift
 
 # Install Maven 3.5.2
-ENV MAVEN_VERSION 3.5.2
-RUN (curl -fSL http://ftp.wayne.edu/apache/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | \
+ENV MAVEN_VERSION 3.5.4
+RUN (curl -sfSL http://ftp.wayne.edu/apache/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | \
     tar -zx -C /usr/local) && \
     mv /usr/local/apache-maven-$MAVEN_VERSION /usr/local/maven && \
     ln -sf /usr/local/maven/bin/mvn /usr/local/bin/mvn && \
