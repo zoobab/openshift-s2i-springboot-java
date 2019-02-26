@@ -37,7 +37,7 @@ RUN (curl -sfSL https://www-eu.apache.org/dist/maven/maven-3/$MAVEN_VERSION/bina
 
 # Install Gradle 4.4
 ENV GRADLE_VERSION 4.4
-RUN curl -fSL https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip -o /tmp/gradle-$GRADLE_VERSION-bin.zip && \
+RUN curl -sfSL https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip -o /tmp/gradle-$GRADLE_VERSION-bin.zip && \
     unzip /tmp/gradle-$GRADLE_VERSION-bin.zip -d /usr/local/ && \
     rm /tmp/gradle-$GRADLE_VERSION-bin.zip && \
     mv /usr/local/gradle-$GRADLE_VERSION /usr/local/gradle && \
