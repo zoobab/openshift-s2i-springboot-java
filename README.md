@@ -1,3 +1,4 @@
+[![noswpatv3](http://zoobab.wdfiles.com/local--files/start/noupcv3.jpg)](https://ffii.org/donate-now-to-save-europe-from-software-patents-says-ffii/)
 # Create a Spring Boot Application S2I builder image for OpenShift CP v3.6+
 
 ## A. Creating the S2I builder image and testing it.
